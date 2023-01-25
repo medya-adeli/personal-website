@@ -7,7 +7,7 @@ module.exports = {
         primary:"#FFD500"
       },
       spacing:{
-        
+        '115':'10rem'
       },
       screens:{
         sm:"100px"
