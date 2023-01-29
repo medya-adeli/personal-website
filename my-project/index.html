@@ -19,13 +19,13 @@
 
     <ul class="z-10 md:flex md:items-center capitalize md:z-auto md:static absolute bg-black w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
       <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-yellow-500 duration-500">HOME</a>
+        <a href="#home" class="text-xl hover:text-yellow-500 duration-500">HOME</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-yellow-500 duration-500">about me</a>
+        <a href="#about-me" class="text-xl hover:text-yellow-500 duration-500">about me</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-yellow-500 duration-500">ABOUT</a>
+        <a href="#services" class="text-xl hover:text-yellow-500 duration-500">Services</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-xl hover:text-yellow-500 duration-500">CONTACT</a>
@@ -35,15 +35,26 @@
       </li>
     </ul>
   </nav>
+  <section id="home">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 place-items-center min-h-screen mr-5">
-        <img class="h-96" src="./pic/result.svg" alt="">    
-      <div class="capitalize text-center text-2xl sm:text-4xl font-extrabold transition-all ease-in duration-300">
-        <p>Hello 👋🏻 medya adeli</p>
-        <p class="pt-5">Im web developer.</p>
-      </div>
+      <img class="h-96" src="./pic/result.svg" alt="">    
+    <div class="capitalize text-center text-2xl sm:text-4xl font-extrabold transition-all ease-in duration-300">
+      <p>Hello 👋🏻 medya adeli</p>
+      <p class="pt-5">Im web developer.</p>
+      <div class="inline-flex pt-10">
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l">
+          Cv
+        </button>
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r">
+          Resume
+        </button>
+      </div>   
     </div>
+  </div>
+  </section>
+  <section id="about-me">
     <div class=" grid grid-cols-1 lg:grid-cols-2   min-h-screen">
-      <div class=" capitalize  pt-16  w-4/5 pl-10">
+      <div class=" capitalize  pt-16  w-4/5 pl-16">
         <div class=" backdrop-blur bg-white/10 border-white border-2 rounded-3xl h-4/5 p-12">
             <h1 class="text-4xl text-center"> me</h1><br>
             <p class="mb-40">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -80,9 +91,58 @@
         <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
           <div class="bg-red-700 h-2.5 rounded-full" style="width: 30%"></div>
         </div>
-  
       </div>
   </div>
+  </section>
+  <section id="services">
+    <h1 class="text-center capitalize text-4xl p-24">what we do</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-10 p-10">
+        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+              <img class="w-full" src="./pic/download.jpg" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-white-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+          </div>
+        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+              <img class="w-full" src="./pic/download.jpg" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-white-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+          </div>
+        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+              <img class="w-full" src="./pic/download.jpg" alt="Sunset in the mountains">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+                <p class="text-white-700 text-base">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div class="px-6 pt-4 pb-2">
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+              </div>
+          </div>
+    </div>
+   
+  </section>
+
   <script>
     
     function Menu(e){
