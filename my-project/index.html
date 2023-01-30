@@ -32,6 +32,29 @@
       </li>
     </ul>
   </nav>
+  <button
+  type="button"
+  data-mdb-ripple="true"
+  data-mdb-ripple-color="light"
+  class=" p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-5 right-5 fixed"
+  id="btn-back-to-top"
+>
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    class="w-4 h-4"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+  >
+    <path
+      fill="currentColor"
+      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+    ></path>
+  </svg>
+</button>
+
   <section id="home">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 place-items-center min-h-screen mr-5">
       <img class="h-96" src="./pic/result.svg" alt="">    
@@ -144,18 +167,18 @@
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
         <form action="#" class="space-y-8">
             <div>
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                <label for="email" class="block mb-2 text-sm text-gray-900 dark:text-gray-300">Your email</label>
                 <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
             </div>
             <div>
-                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                <label for="subject" class="block mb-2 text-sm  text-gray-900 dark:text-gray-300">Subject</label>
                 <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
             </div>
             <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                <label for="message" class="block mb-2 text-sm  text-gray-900 dark:text-gray-400">Your message</label>
                 <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
             </div>
-            <button type="submit" class=" bg-yellow-600 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+            <button type="submit" class=" bg-yellow-600 py-3 px-5 text-sm  text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
         </form>
     </div>
   </section>
@@ -164,6 +187,27 @@
       let list = document.querySelector('ul');
       e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
     }
+    let mybutton = document.getElementById('btn-back-to-top');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener('click', backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
   </script>
 </body>
 </html>
