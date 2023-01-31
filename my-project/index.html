@@ -6,9 +6,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="capitalize bg-black font-mono text-white ">
+<body class="scroll-smooth overflow-x-hidden capitalize bg-black font-mono text-white ">
   <nav class="p-5 bg-gray-700 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
         <p class="text-2xl  cursor-pointer"><span class="text-yellow-500">M</span >edya <span class="text-yellow-500">A</span>deli</p>
@@ -32,31 +33,32 @@
       </li>
     </ul>
   </nav>
-  <button
-  type="button"
-  data-mdb-ripple="true"
-  data-mdb-ripple-color="light"
-  class=" p-3 bg-yellow-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow-700 hover:shadow-lg focus:bg-yellow-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-24 right-5 fixed"
-  id="btn-back-to-top"
+ <!-- Back to top button -->
+<button
+type="button"
+data-mdb-ripple="true"
+data-mdb-ripple-color="light"
+class="z-50 cursor-pointer p-3 bg-yellow-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-yellow-700 hover:shadow-lg focus:bg-yellow-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-20 right-5 fixed"
+id="btn-back-to-top"
 >
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    data-prefix="fas"
-    class="w-4 h-4"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-  >
-    <path
-      fill="currentColor"
-      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
-    ></path>
-  </svg>
+<svg
+  aria-hidden="true"
+  focusable="false"
+  data-prefix="fas"
+  class="w-4 h-4"
+  role="img"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 448 512"
+>
+  <path
+    fill="currentColor"
+    d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+  ></path>
+</svg>
 </button>
 
-  <section id="home">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 place-items-center min-h-screen mr-5">
+  <section class="scroll" id="home" data-aos="fade-up">
+          <div class=" grid grid-cols-1 lg:grid-cols-2 gap-0 place-items-center min-h-screen mr-5">
       <img class="h-96" src="./pic/result.svg" alt="">    
     <div class="capitalize text-center text-2xl sm:text-4xl font-extrabold transition-all ease-in duration-300">
       <p>Hello 👋🏻 medya adeli</p>
@@ -70,9 +72,10 @@
         </button>
       </div>   
     </div>
-  </div>
+    </div>
+
   </section>
-  <section id="about-me">
+  <section class="scroll" id="about-me" data-aos="fade-right">
     <div class=" grid grid-cols-1 lg:grid-cols-2   min-h-screen">
       <div class=" capitalize  pt-16  w-4/5 pl-16">
         <div class=" backdrop-blur bg-white/10 border-white border-2 rounded-3xl h-4/5 p-12">
@@ -114,10 +117,10 @@
       </div>
   </div>
   </section>
-  <section id="services">
+  <section class="scroll" id="services" data-aos="fade-left">
     <h1 class="text-center capitalize text-4xl p-24">what i do</h1>
     <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-10 p-10">
-        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+        <div class="max-w-sm rounded-2xl  shadow-lg bg-gray-600">
               <img class="w-full" src="./pic/download.jpg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
@@ -161,7 +164,7 @@
           </div>
     </div>
   </section>
-  <section id="contact">
+  <section class="scroll" id="contact" data-aos="fade-down">
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
@@ -208,12 +211,16 @@
 </footer>
 
   </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init();
     function Menu(e){
       let list = document.querySelector('ul');
       e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
     }
-    let mybutton = document.getElementById('btn-back-to-top');
+
+    // Get the button
+let mybutton = document.getElementById('btn-back-to-top');
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -234,6 +241,7 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
   </script>
 </body>
 </html>

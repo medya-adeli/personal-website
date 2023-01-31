@@ -1,23 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html"],
+  content: {
+    transform: (content) => content.replace(/taos:/g, 'Fade Up'),
+  },
+  safelist: [
+    '!duration-0',
+    '!delay-0',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ],
   theme: {
     extend: {
-      keyframes:{
-        wave:{
-          '0%': { transform: 'rotate(0.0deg)' },
-          '10%': { transform: 'rotate(14deg)' },
-          '20%': { transform: 'rotate(-8deg)' },
-          '30%': { transform: 'rotate(14deg)' },
-          '40%': { transform: 'rotate(-4deg)' },
-          '50%': { transform: 'rotate(10.0deg)' },
-          '60%': { transform: 'rotate(0.0deg)' },
-          '100%': { transform: 'rotate(0.0deg)' },
-        },
-      },
-      animation:{
-        'waiving-hand': 'wave  2s linear infinite',
-      },
+      
       colors:{
         primary:"#FFD500"
       },
@@ -30,6 +24,8 @@ module.exports = {
 
     },
   },
-  plugins: [],
-  darkMode: ['class', '[data-mode="dark"]'],
+  plugins: [
+    require('taos/plugin')
+  ],
+
 }
