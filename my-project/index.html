@@ -12,28 +12,28 @@
 <body class="scroll-smooth overflow-x-hidden capitalize bg-black font-mono text-white ">
   <nav class="p-5 bg-gray-700 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
-        <p class="text-2xl  cursor-pointer"><span class="text-yellow-500">M</span >edya <span class="text-yellow-500">A</span>deli</p>
+          <p class="text-2xl  cursor-pointer"><span class="text-yellow-500">M</span >edya <span class="text-yellow-500">A</span>deli</p>
       <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
       </span>
     </div>
 
     <ul class="z-10 md:flex md:items-center capitalize md:z-auto md:static absolute bg-gray-700 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#home" class="text-xl hover:text-yellow-500 duration-500">HOME</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#about-me" class="text-xl hover:text-yellow-500 duration-500">about me</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#services" class="text-xl hover:text-yellow-500 duration-500">Services</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#comment" class="text-xl hover:text-yellow-500 duration-500">comment</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#contact" class="text-xl hover:text-yellow-500 duration-500">CONTACT</a>
-      </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#home" class="text-xl hover:text-yellow-500 duration-500">HOME</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#about-me" class="text-xl hover:text-yellow-500 duration-500">about me</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#services" class="text-xl hover:text-yellow-500 duration-500">Services</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#comment" class="text-xl hover:text-yellow-500 duration-500">comment</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+            <a href="#contact" class="text-xl hover:text-yellow-500 duration-500">CONTACT</a>
+        </li>
     </ul>
   </nav>
  <!-- Back to top button -->
@@ -79,6 +79,7 @@ id="btn-back-to-top"
 
   </section>
   <section  id="about-me" data-aos="fade-right">
+    <h1 class="text-center capitalize text-4xl pt-10">my story</h1>
     <div class=" grid grid-cols-1 lg:grid-cols-2   min-h-screen">
       <div class=" capitalize  pt-16  w-4/5 pl-16">
         <div class=" backdrop-blur bg-white/10 border-white border-2 rounded-3xl h-4/5 p-12">
@@ -88,7 +89,6 @@ id="btn-back-to-top"
           
         </div>
         <div class="text-center capitalize text-4xl w-4/5 h-4/5 pl-20">
-        <h1>skills</h1>
         <div class="flex justify-between mb-1 pt-20">
           <span class="text-base font-medium text-orange-500 dark:text-white">html</span>
           <span class="text-sm font-medium text-red-700 dark:text-white">70%</span>
@@ -120,10 +120,10 @@ id="btn-back-to-top"
       </div>
   </div>
   </section>
-  <section id="services" data-aos="fade-left">
-    <h1 class="text-center capitalize text-4xl p-24">what i do</h1>
-    <div class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-10 p-10">
-        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+  <section id="services" data-aos="fade-left" class="2xl:">
+    <h1 class="text-center capitalize text-4xl pt-10">what i do</h1>
+    <div class=" grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-10 p-10">
+        <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg bg-gray-600">
               <img class="w-full" src="./pic/1.jpg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">web designer</div>
@@ -137,7 +137,7 @@ id="btn-back-to-top"
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#js</span>
               </div>
           </div>
-        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+        <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg bg-gray-600">
               <img class="w-full" src="./pic/2.jpg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">web programmer</div>
@@ -151,7 +151,7 @@ id="btn-back-to-top"
                 <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#html</span>
               </div>
           </div>
-        <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg bg-gray-600">
+        <div class="max-w-2xl mx-auto rounded-2xl overflow-hidden shadow-lg bg-gray-600">
               <img class="w-full" src="./pic/3.jpg" alt="Sunset in the mountains">
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">mobile developer</div>
@@ -204,8 +204,8 @@ id="btn-back-to-top"
     </div>
   </section>
   <section id="contact" data-aos="fade-up-right">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+    <div class="lg:py-16  mx-auto max-w-screen-md">
+        <h2 class="text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
         <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
         <form action="#" class="space-y-8">
             <div>
